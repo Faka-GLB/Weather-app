@@ -1,4 +1,4 @@
-package com.onboarding.weather_now
+package com.onboarding.pronosticAR
 
 import org.junit.Test
 

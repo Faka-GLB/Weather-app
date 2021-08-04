@@ -1,4 +1,4 @@
-package com.onboarding.weather_now
+package com.onboarding.pronosticAR
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
