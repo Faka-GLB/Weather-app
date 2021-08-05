@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">PronosticAR</string>
+    <string name="main_activity_show_weather_toast">Estado:%1$s Máxima:%2$s°C Mínima:%3$s°C</string>
 </resources>
