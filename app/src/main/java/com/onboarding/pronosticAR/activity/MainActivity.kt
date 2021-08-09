@@ -3,6 +3,7 @@ package com.onboarding.pronosticAR.activity
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.onboarding.pronosticAR.contract.MainContract
+import com.onboarding.pronosticAR.data.WeatherService
 import com.onboarding.pronosticAR.databinding.ActivityMainBinding
 import com.onboarding.pronosticAR.mvp.model.MainModel
 import com.onboarding.pronosticAR.mvp.presenter.MainPresenter
@@ -16,6 +17,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        presenter = MainPresenter(model = MainModel(), view = MainView(this))
+        presenter = MainPresenter(model = MainModel(WeatherService()), view = MainView(this))
     }
 }
