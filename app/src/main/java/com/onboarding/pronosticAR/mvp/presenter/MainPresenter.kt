@@ -14,13 +14,6 @@ class MainPresenter(private val model: MainContract.MainModel, private val view:
         model.getWeatherInfo()
             .subscribeOn(Schedulers.io())
             .observeOn(AndroidSchedulers.mainThread())
-            .subscribe { weather ->
-                val current = weather.list.first()
-                view.showWeather(
-                    current.descriptionResponse.first().weather,
-                    current.temperatureResponse.max.toString(),
-                    current.temperatureResponse.min.toString()
-                )
-            }
+            .subscribe { weather -> view.showWeather(weather) }
     }
 }

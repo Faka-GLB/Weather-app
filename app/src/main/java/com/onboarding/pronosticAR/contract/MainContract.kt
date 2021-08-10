@@ -1,6 +1,6 @@
 package com.onboarding.pronosticAR.contract
 
-import com.onboarding.pronosticAR.domain.entity.ForecastApi
+import com.onboarding.pronosticAR.domain.entity.ForecastApiEntity
 import io.reactivex.rxjava3.core.Observable
 
 interface MainContract {
@@ -10,10 +10,10 @@ interface MainContract {
     }
 
     interface MainModel {
-        fun getWeatherInfo(): Observable<ForecastApi>
+        fun getWeatherInfo(): Observable<ForecastApiEntity>
     }
 
     interface MainView {
-        fun showWeather(forecast: String, max: String, min :String)
+        fun showWeather(forecast: ForecastApiEntity)
     }
 }
