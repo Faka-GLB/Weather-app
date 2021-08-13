@@ -1,10 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <style name="TextStyleAppTitle" parent="TextAppearance.AppCompat.Display1">
-        <item name="android:textColor">@color/tree_poppy_text_color_main_activity</item>
+        <item name="android:textColor">@color/blue_ribbon_text_color_main_activity</item>
         <item name="android:textAlignment">center</item>
         <item name="android:textSize">@dimen/main_activity_tittle_text_size_xbig</item>
         <item name="android:textStyle">bold</item>
         <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:shadowColor">@color/black</item>
+        <item name="android:shadowDx">1.5</item>
+        <item name="android:shadowDy">1.3</item>
+        <item name="android:shadowRadius">1.6</item>
+        <item name="android:layout_marginTop">@dimen/main_activity_margin_xsmall</item>
+    </style>
+
+    <style name="TextStyleWeatherItemDay" parent="TextAppearance.AppCompat.Display1">
+        <item name="android:textColor">@color/blue_ribbon_text_color_main_activity</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">@dimen/item_weather_text_size_normal</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/biryani_semibold</item>
+        <item name="android:shadowColor">@color/black</item>
+        <item name="android:shadowDx">1.5</item>
+        <item name="android:shadowDy">1.3</item>
+        <item name="android:shadowRadius">1.6</item>
+        <item name="android:layout_marginTop">@dimen/item_weather_margin_size_xsmall</item>
+    </style>
+
+    <style name="TextStyleWeatherItemTemperature" parent="TextAppearance.AppCompat.Display1">
+        <item name="android:textColor">@color/blue_ribbon_text_color_main_activity</item>
+        <item name="android:textSize">@dimen/item_weather_text_size_xbig</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/biryani_semibold</item>
+        <item name="android:shadowColor">@color/black</item>
+        <item name="android:shadowDx">1.5</item>
+        <item name="android:shadowDy">1.3</item>
+        <item name="android:shadowRadius">1.6</item>
+        <item name="android:layout_marginStart">@dimen/item_weather_margin_size_xsmall</item>
+    </style>
+
+    <style name="TextStyleWeatherItemText" parent="TextAppearance.AppCompat.Display1">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/item_weather_text_size_small</item>
+        <item name="android:layout_marginStart">@dimen/item_weather_margin_size_xsmall</item>
+        <item name="android:layout_marginBottom">@dimen/item_weather_margin_size_xsmall</item>
+    </style>
+
+    <style name="RecyclerViewWeatherBackground">
+        <item name="android:background">@color/recycler_view_background_color_main_activity</item>
+        <item name="android:backgroundTint">@color/recycler_view_background_tint_main_activity</item>
+        <item name="android:backgroundTintMode">screen</item>
+        <item name="android:scrollbarAlwaysDrawVerticalTrack">true</item>
+        <item name="android:layout_marginTop">@dimen/main_activity_margin_xsmall</item>
+        <item name="android:layout_marginBottom">@dimen/main_activity_margin_xsmall</item>
     </style>
 </resources>

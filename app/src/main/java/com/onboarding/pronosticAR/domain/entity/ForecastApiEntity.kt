@@ -1,6 +1,6 @@
 package com.onboarding.pronosticAR.domain.entity
 
-data class ForecastApi(
+data class ForecastApiEntity(
     val cod: String,
     val message: Int,
     val cnt: Int,

@@ -16,12 +16,12 @@ import com.onboarding.pronosticAR.domain.entity.Coordinates
 import com.onboarding.pronosticAR.domain.entity.MainTemperature
 import com.onboarding.pronosticAR.domain.entity.Rain
 import com.onboarding.pronosticAR.domain.entity.Sys
-import com.onboarding.pronosticAR.domain.entity.ForecastApi
+import com.onboarding.pronosticAR.domain.entity.ForecastApiEntity
 import com.onboarding.pronosticAR.domain.entity.WeatherDescription
 import com.onboarding.pronosticAR.domain.entity.WeatherList
 import com.onboarding.pronosticAR.domain.entity.Wind
 
-fun ApiResponse.transform() = ForecastApi(
+fun ApiResponse.transform() = ForecastApiEntity(
     cod = this.cod,
     message = this.message,
     cnt = this.cnt,

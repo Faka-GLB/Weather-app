@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">PronosticAR</string>
     <string name="main_activity_show_weather_toast">Estado:%1$s Máxima:%2$s°C Mínima:%3$s°C</string>
+    <string name="item_weather_image_view_description">%1$s</string>
+    <string name="item_weather_image_view_url">http://openweathermap.org/img/wn/%1$s@2x.png</string>
+    <string name="item_weather_text_view_percentage_of_precipitation">Precipitación: %1$s %%</string>
+    <string name="item_weather_text_view_wind">Viento: %1$s km/h %2$s</string>
+    <string name="item_weather_text_view_temperature">%1$s °C</string>
 </resources>
