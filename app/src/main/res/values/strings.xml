@@ -6,4 +6,13 @@
     <string name="item_weather_text_view_percentage_of_precipitation">Precipitación: %1$s %%</string>
     <string name="item_weather_text_view_wind">Viento: %1$s km/h %2$s</string>
     <string name="item_weather_text_view_temperature">%1$s °C</string>
+    <string name="detailed_weather_fragment_button_return_text">Volver</string>
+    <string name="detailed_weather_fragment_text_view_description">Descripción: %1$s</string>
+    <string name="detailed_weather_fragment_text_view_feels_like">Sensación térmica: %1$.2f °C</string>
+    <string name="detailed_weather_fragment_text_view_minimum">Mínima: %1$.2f °C</string>
+    <string name="detailed_weather_fragment_text_view_maximum">Máxima: %1$.2f °C</string>
+    <string name="detailed_weather_fragment_text_view_humidity">Humedad: %1$d%%</string>
+    <string name="detailed_weather_fragment_text_view_pressure">Presión atmosférica: %1$d hPa</string>
+    <string name="detailed_weather_fragment_text_view_cloudness">Nubosidad: %1$d%%</string>
+    <string name="detailed_weather_fragment_text_view_visibility">Visibilidad: %1$d m</string>
 </resources>

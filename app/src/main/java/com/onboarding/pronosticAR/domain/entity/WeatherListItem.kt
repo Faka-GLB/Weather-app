@@ -1,6 +1,10 @@
 package com.onboarding.pronosticAR.domain.entity
 
-data class WeatherList(
+import android.os.Parcelable
+import kotlinx.parcelize.Parcelize
+
+@Parcelize
+data class WeatherListItem(
     val dt: Int,
     val temperatureResponse: MainTemperature,
     val descriptionResponse: List<WeatherDescription>,
@@ -11,4 +15,4 @@ data class WeatherList(
     val rain: Rain,
     val sys: Sys,
     val dtTxt: String
-)
+) : Parcelable

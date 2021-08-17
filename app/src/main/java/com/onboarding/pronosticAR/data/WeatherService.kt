@@ -13,7 +13,7 @@ class WeatherService {
     fun getWeather(): Observable<ForecastApiEntity> {
         return Observable.create { subscriber ->
             val callResponse =
-                generator.createService(WeatherApi::class.java).callWeatherInfo(CITY, APP_ID, UNITS)
+                generator.createService(WeatherApi::class.java).callWeatherInfo(CITY, APP_ID, UNITS, LANG)
             val response = callResponse.execute()
 
             if (response.isSuccessful) {
@@ -27,5 +27,6 @@ class WeatherService {
     companion object {
         private const val CITY: String = "Tandil"
         private const val UNITS: String = "metric"
+        private const val LANG: String = "es"
     }
 }

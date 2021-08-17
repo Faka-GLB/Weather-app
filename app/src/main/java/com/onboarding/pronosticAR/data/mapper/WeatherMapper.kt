@@ -18,20 +18,20 @@ import com.onboarding.pronosticAR.domain.entity.Rain
 import com.onboarding.pronosticAR.domain.entity.Sys
 import com.onboarding.pronosticAR.domain.entity.ForecastApiEntity
 import com.onboarding.pronosticAR.domain.entity.WeatherDescription
-import com.onboarding.pronosticAR.domain.entity.WeatherList
+import com.onboarding.pronosticAR.domain.entity.WeatherListItem
 import com.onboarding.pronosticAR.domain.entity.Wind
 
 fun ApiResponse.transform() = ForecastApiEntity(
     cod = this.cod,
     message = this.message,
     cnt = this.cnt,
-    list = this.list.transform(),
+    listItem = this.list.transform(),
     city = this.city.transform()
 )
 
 fun List<ListResponse>.transform() = this.map { it.transform() }
 
-fun ListResponse.transform() = WeatherList(
+fun ListResponse.transform() = WeatherListItem(
     dt = this.date,
     temperatureResponse = this.mainResponse.transform(),
     descriptionResponse = this.weatherResponse.map { it.transform() },
