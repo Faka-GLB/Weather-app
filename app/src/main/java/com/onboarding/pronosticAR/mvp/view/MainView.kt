@@ -2,6 +2,7 @@ package com.onboarding.pronosticAR.mvp.view
 
 import android.app.Activity
 import android.os.Bundle
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.onboarding.pronosticAR.adapter.WeatherAdapter
@@ -15,6 +16,7 @@ import com.onboarding.pronosticAR.mvp.view.base.ActivityView
 class MainView(activity: Activity, private val binding: ActivityMainBinding, private val weatherItemClickListener: WeatherItemClickListener) : ActivityView(activity), MainContract.MainView {
 
     override fun showWeather(forecast: ForecastApiEntity) {
+        binding.progressBarMainActivity.visibility = View.GONE
         binding.recyclerViewMainActivity.layoutManager = LinearLayoutManager(activity, LinearLayoutManager.VERTICAL, false)
         binding.recyclerViewMainActivity.adapter = WeatherAdapter(forecast.listItem, weatherItemClickListener)
     }
@@ -24,6 +26,10 @@ class MainView(activity: Activity, private val binding: ActivityMainBinding, pri
         activity?.let {
             dialog.show((it as AppCompatActivity).supportFragmentManager, MAIN_VIEW_TAG)
         }
+    }
+
+    override fun showProgressBar() {
+        binding.progressBarMainActivity.visibility = View.VISIBLE
     }
 
     companion object{

@@ -14,6 +14,7 @@ class MainPresenter(private val model: MainContract.MainModel, private val view:
     }
 
     override fun getWeatherInfo() {
+        view.showProgressBar()
         model.getWeatherInfo()
             .subscribeOn(Schedulers.io())
             .observeOn(AndroidSchedulers.mainThread())
