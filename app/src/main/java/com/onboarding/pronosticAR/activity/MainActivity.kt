@@ -20,6 +20,7 @@ class MainActivity : AppCompatActivity(), WeatherItemClickListener {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         presenter = MainPresenter(model = MainModel(WeatherService()), view = MainView(this, binding, this))
+        presenter.getWeatherInfo()
     }
 
     override fun onItemClick(weatherItem: WeatherListItem) {
