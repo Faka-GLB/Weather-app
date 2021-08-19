@@ -7,6 +7,13 @@
     android:background="@drawable/image_main_activity_background"
     tools:context=".activity.MainActivity">
 
+    <ProgressBar
+        android:id="@+id/progress_bar_main_activity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:indeterminateTint="@color/blue_ribbon_color"
+        android:visibility="gone" />
+
     <TextView
         android:id="@+id/text_view_main_activity_app_title"
         style="@style/TextStyleAppTitle"

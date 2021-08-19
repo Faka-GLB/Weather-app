@@ -19,5 +19,6 @@ interface MainContract {
     interface MainView {
         fun showWeather(forecast: ForecastApiEntity)
         fun showDetailedWeatherInfo(bundle: Bundle)
+        fun showProgressBar()
     }
 }

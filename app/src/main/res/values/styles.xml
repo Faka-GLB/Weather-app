@@ -2,7 +2,7 @@
 <resources>
 
     <style name="TextStyleAppTitle" parent="TextAppearance.AppCompat.Display1">
-        <item name="android:textColor">@color/blue_ribbon_text_color</item>
+        <item name="android:textColor">@color/blue_ribbon_color</item>
         <item name="android:textAlignment">center</item>
         <item name="android:textSize">@dimen/main_activity_tittle_text_size_xbig</item>
         <item name="android:textStyle">bold</item>
@@ -15,7 +15,7 @@
     </style>
 
     <style name="TextStyleWeatherItemDay" parent="TextAppearance.AppCompat.Display1">
-        <item name="android:textColor">@color/blue_ribbon_text_color</item>
+        <item name="android:textColor">@color/blue_ribbon_color</item>
         <item name="android:textAlignment">center</item>
         <item name="android:textSize">@dimen/item_weather_text_size_normal</item>
         <item name="android:textStyle">bold</item>
@@ -28,7 +28,7 @@
     </style>
 
     <style name="TextStyleWeatherItemTemperature" parent="TextAppearance.AppCompat.Display1">
-        <item name="android:textColor">@color/blue_ribbon_text_color</item>
+        <item name="android:textColor">@color/blue_ribbon_color</item>
         <item name="android:textSize">@dimen/item_weather_text_size_xbig</item>
         <item name="android:textStyle">bold</item>
         <item name="android:fontFamily">@font/biryani_semibold</item>
@@ -57,7 +57,7 @@
     </style>
 
     <style name="TextStyleDetailedWeatherFragmentTitle" parent="TextAppearance.AppCompat.Display1">
-        <item name="android:textColor">@color/blue_ribbon_text_color</item>
+        <item name="android:textColor">@color/blue_ribbon_color</item>
         <item name="android:fontFamily">@font/biryani_semibold</item>
         <item name="android:textSize">@dimen/detailed_weather_fragment_title_text_size_big</item>
         <item name="android:layout_marginBottom">@dimen/item_weather_margin_size_xsmall</item>
@@ -71,7 +71,7 @@
     </style>
 
     <style name="TextStyleDetailedWeatherFragmentTemperature" parent="TextAppearance.AppCompat.Display1">
-        <item name="android:textColor">@color/blue_ribbon_text_color</item>
+        <item name="android:textColor">@color/blue_ribbon_color</item>
         <item name="android:fontFamily">@font/biryani_semibold</item>
         <item name="android:textSize">@dimen/detailed_weather_fragment_temperature_text_normal</item>
         <item name="android:shadowColor">@color/black</item>
