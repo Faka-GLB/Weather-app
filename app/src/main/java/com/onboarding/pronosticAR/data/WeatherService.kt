@@ -18,7 +18,7 @@ class WeatherService : WeatherServiceI {
             val response = callResponse.execute()
 
             if (response.isSuccessful) {
-                subscriber.onNext(response.body()?.transform())
+                subscriber.onNext(response.body()?.transform()!!)
             } else {
                 subscriber.onError(Throwable(response.message()))
             }

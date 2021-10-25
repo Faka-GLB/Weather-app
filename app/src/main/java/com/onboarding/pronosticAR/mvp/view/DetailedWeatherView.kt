@@ -12,7 +12,7 @@ class DetailedWeatherView(fragment: DialogFragment, private val binding: Detaile
     DetailedWeatherContract.DetailedWeatherView {
     override fun showDetailedWeatherInfo(weatherItem: WeatherListItem) {
         context?.let {
-            weatherItem?.let { weather ->
+            weatherItem.let { weather ->
                 binding.textViewDetailedWeatherFragmentTitle.text = DateUtils.getDate(weather.dtTxt)
                 binding.textViewDetailedWeatherFragmentDescription.text =
                     it.getString(R.string.detailed_weather_fragment_text_view_description, weather.descriptionResponse.first().description)
